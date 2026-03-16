@@ -3,260 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio Miquéias </title>
+    <title>Miquéias Dev Front-End Júnior</title>
+    <link rel="stylesheet" href="./dist/styles.css" />
 </head>
-<link rel="stylesheet" href="./porti.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-<body>
-    <div class="container">
-        <div class="info">
-            <header>
-                <nav id="navbar">
-                    <ul>
-                        <a href="#projects"><li>Projetos</li></a>
-                        <a href="#links"><li>Trabalhar</li></a>
-                        <a href="#profile-link"><li>Contate me</li></a>
-                    </ul>
+
+<body class="pt-15 opacity-0" id="body">
+     <main class="bg-gray-500 w-full h-auto flex flex-col" id="main-section">
+        <header class="bg-gray-600 w-full h-15 fixed top-0 left-0 z-999 border-b-2 border-white opacity-0" id="header">
+            <nav id="navbar">
+                <ul class="w-full h-15 flex flex-row justify-evenly">
+                    <li class="mt-5 hover:scale-110 transition-transform duration-300 text-white"><a href="#projects">Projetos</a></li>
+                    <li class="mt-5 hover:scale-110 transition-transform duration-300 text-white"><a href="#about">Sobre</a></li>
+                    <li class="mt-5 hover:scale-110 transition-transform duration-300 text-white"><a href="#contact">Contato</a></li>
+                </ul>
                 </nav>
             </header>
-            <section id="welcome-section">
-<h1 id="welcome-title">Olá, me chamo Miquéias</h1>
-<p id="welcome-subtitle">Sou um desenvolvedor web</p>
-<img id="profile-photo" src="https://avatars.githubusercontent.com/u/171522541?v=4" alt="my-pic" />
+
+     
+        <section class="w-full h-50 bg-gray-500 flex flex-row justify-center gap-3 border-b-2 border-white opacity-0" id="about">
+                 <img src="./src/images/foto-de-perfil.jpeg" alt="foto de perfil" class="w-18 h-18 border-2 border-amber-50 rounded-full mt-14" id="profile-pic" />
+                 <div class="w-auto flex flex-col gap-1">
+                    <h1 class="text-2xl text-white mt-15">Miquéias Malavazi Lima</h1>
+                    <p class="text-white">Desenvolvedor Front-End Júnior</p>
+                 </div>
+        </section>
+          
+            <section class="w-full h-auto flex flex-col sm:flex-row opacity-0" id="goals">
+
+                <div class="w-full flex flex-col bg-gray-600 h-auto gap-2 pb-5 border-b-2 border-white sm:border-b-0 sm:border-r-2 sm:border-white" id="certificates">
+                    <h3 class="mt-5 mb-3 text-white text-center text-2xl">Meus Certificados:</h3>
+                <ul class="list-disc list-inside mx-auto">
+                    <li class="mb-1 hover:translate-x-5 transition-transform duration-300 marker:text-green-500"><a href="https://freecodecamp.org/certification/pietro_maximoff/responsive-web-design" target="_blank" class="text-white">Web Desing Responsivo</a></li>
+                    <li class="hover:translate-x-5 transition-transform duration-300 marker:text-green-500"><a href="https://freecodecamp.org/certification/pietro_maximoff/data-structures-and-algorithms" target="_blank" class="text-white">Algoritimos e Estruturas de Dados JS</a></li>
+                    <li class="mt-1 hover:translate-x-5 transition-transform duration-300 marker:text-green-500"><a href="https://freecodecamp.org/certification/pietro_maximoff/front-end-libraries" target="_blank" class="text-white">Bibliotecas Front-End</a></li>
+                </ul>
+                </div>
+
+                <div class="w-full h-auto flex flex-col pb-4 bg-gray-600 opacity-0" id="goals-text">
+                 <h3 class="mt-6 mb-3 text-white text-center text-2xl sm:mt-5">Minhas Metas:</h3>
+                   <ul class="list-disc disc-inside mx-auto">
+                      <li class="text-white marker:text-green-500">Dominar HTML, CSS e Javascript</li>
+                      <li class="text-white marker:text-green-500">Aprender Bibliotecas Front-End</li>
+                      <li class="text-white marker:text-orange-400">Cursar Banco de dados</li>
+                      <li class="text-white marker:text-orange-400">Aprender PHP</li>
+                      <li class="text-white marker:text-red-500">Aprender Back-End e API'S</li>
+                      <li class="text-white marker:text-red-500">Aprender Python</li>
+                   </ul>
+
+                 </div>   
             </section>
-            <section id="projects">
-                <h2 id="second-title" style="grid-area: title;">Aqui está uma prévia de meus projetos</h2>
-                <figure>
-               <a href="https://pietrosilver.github.io/formulario-1/" target="_blank"><img class="projects-image" style="grid-area: img-1;" src="https://github.com/pietrosilver/imagens-portif-lio/blob/main/Images-portif%C3%B3lio/Meu%20Primeiro%20projeto.png?raw=true" alt="project-1" id="first"></a>
-            <figcaption>Projeto de formulário, não responsivo.</figcaption>    
-            </figure>
-            <figure>
-                <a href="https://pietrosilver.github.io/pagina-de-homenagem/" target="_blank"><img class="projects-image" style="grid-area: img-2;" id="second" src="https://github.com/pietrosilver/imagens-portif-lio/blob/main/Images-portif%C3%B3lio/Meu%20Segundo%20projeto.png?raw=true" alt="project-2"></a>
-                <figcaption>Página de homenagem, sem responsividade.</figcaption>
-            </figure>
-            <figure>
-               <a href="https://pietrosilver.github.io/P-gina-documenta-o-t-cnica/" target="_blank"><img class="projects-image" style="grid-area: img-3;" id="third" src="https://github.com/pietrosilver/imagens-portif-lio/blob/main/Images-portif%C3%B3lio/Projeto%20p%C3%A1gina%20t%C3%A9cnica.png?raw=true" alt="project-3"></a>
-                <figcaption>Página técnica, com responsividade</figcaption>
-            </figure>
-            <figure>
-               <a href="https://pietrosilver.github.io/p-gina-de-venda/" target="_blank"><img  class="projects-image" style="grid-area: img-4;" id="fourth" src="https://github.com/pietrosilver/imagens-portif-lio/blob/main/Images-portif%C3%B3lio/P%C3%A1gina%20de%20produto.png?raw=true" alt="project-4"></a>
-                <figcaption>Página de produto com responsividade</figcaption>
-            </figure>
-            </section>
-            <section id="links">
-                <h2>Vamos trabalhar juntos!</h2>
-                <p>Github, email e número para contato</p>
-                <div id="social-icons">
-                <a href="https://github.com/pietrosilver" id="profile-link" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:mmalavazilima@gmail.com" target="_blank"><i class="fab fa-google"></i><span style="color:red">m</span><span style="color:yellow;">a</span><span style="color: blue;">i</span><span style="color: green;">l</span></a>
-               <a href="https://wa.me/5511942921687" target="_blank"> <i class="fab fa-whatsapp"></i></a>
+
+              <div class="w-full h-15 flex flex-row justify-center items-center bg-gray-600 border-b-2 border-t-2 border-white mb-10 opacity-0" id="caption">
+                    <ul class="flex flex-row text-center list-disc gap-10">
+                      <li class="text-white marker:text-green-500">Concluido</li>
+                      <li class="text-white marker:text-orange-400">Estudando</li>
+                      <li class="text-white marker:text-red-500">Planejado</li>
+                    </ul>
+                    </div>
+                
+            <section class="w-full h-450 sm:h-220 bg-gray-500 flex flex-col gap-2 opacity-0" id="projects">
+                <h2 class="ml-1 mt-4 mb-4 text-white text-center text-2xl">Meus Projetos</h2>
+                <div class="w-full h-auto flex flex-col justify-center items-center gap-10 sm:grid sm:grid-cols-2 sm:gap-1 sm:justify-items-center">
+                    <figure class="ml-2 mt-5 sm:mb-5">
+                        <h2 class="text-center text-gray-600 text-2xl bg-white rounded-4xl mb-3 sm:w-50">Carrd Spotify</h2>
+                        <a href="https://pietrosilver.github.io/carrd-mayra-spotify/" target="_blank"><img src="./src/images/card-spotify.png" alt="Projeto Spotify Theme" class="w-50 border-2 border-white rounded-2xl hover:scale-105 transition-transform duration-300" /></a>
+                      <figcaption class="bg-gray-600 text-white text-wrap w-50 mt-2 pl-2 mb-2 rounded-2xl">Projeto Spotify Theme, feito com HTML, Tailwind, JavaScript e jQuery.</figcaption>
+                    </figure>
+                    <figure class="ml-2 sm:mb-5">
+                         <h2 class="text-center text-gray-600 text-2xl bg-white rounded-4xl mb-3 sm:w-50">Calculadora</h2>
+                        <a href="https://pietrosilver.github.io/Calculadora-web-exposi-o/" target="_blank"><img src="./src/images/calculadora.png" alt="Projeto Calculadora" class="w-50 border-2 border-white rounded-2xl hover:scale-105 transition-transform duration-300" /></a>
+                      <figcaption class="bg-gray-600 text-white text-wrap w-50 mt-2 pl-2 mb-2 rounded-2xl">Projeto Calculadora, feito com HTML, CSS e React.</figcaption>
+                    </figure>
+                    <figure class="ml-2 sm:mb-5">
+                        <h2 class="text-center text-gray-600 text-2xl bg-white rounded-4xl mb-3 sm:w-50">Site Ateliê</h2>
+                        <a href="https://pietrosilver.github.io/atelie-da-may/#" target="_blank"><img src="./src/images/site-atelie.png" alt="Projeto Atelie" class="w-50 border-2 border-white rounded-2xl hover:scale-105 transition-transform duration-300" /></a>
+                       <figcaption class="bg-gray-600 text-white text-wrap w-50 mt-2 pl-2 mb-2 rounded-2xl">Projeto Ateliê, feito com HTML, Bootstrap e JavaScript.</figcaption>
+                    </figure>
+                    <figure class="ml-2 sm:mb-5">
+                        <h2 class="text-center text-gray-600 text-2xl bg-white rounded-4xl mb-3 sm:w-50">Relógio 25+5</h2>
+                        <a href="https://pietrosilver.github.io/-relogio-25-5/" target="_blank"><img src="./src/images/Relógio-pomodoro.png" alt="Projeto Relógio Pomodoro" class="w-50 border-2 border-white rounded-2xl hover:scale-105 transition-transform duration-300" /></a>
+                        <figcaption class="bg-gray-600 text-white text-wrap w-50 mt-2 pl-2 mb-2 rounded-2xl">Projeto Relógio Pomodoro, feito com React e Bootstrap.</figcaption>
+                    </figure>
+                    <figure class="ml-2 sm:mb-5">
+                        <h2 class="text-center text-gray-600 text-2xl bg-white rounded-4xl mb-3 sm:w-50">Markdown</h2>
+                        <a href="https://pietrosilver.github.io/markdown-definitive-version/" target="_blank"><img src="./src/images/markdown.png" alt="Projeto Markdown" class="w-50 border-2 border-white rounded-2xl hover:scale-105 transition-transform duration-300" /></a>
+                        <figcaption class="bg-gray-600 text-white text-wrap w-50 mt-2 pl-2 mb-2 rounded-2xl">Projeto Markdown, feito com HTML e SCSS e JavaScript.</figcaption>
+                    </figure>
+                    <figure class="ml-2 sm:mb-5">
+                        <h2 class="text-center text-gray-600 text-2xl bg-white rounded-4xl mb-3 sm:w-50">Quotes Aleatórias</h2>
+                        <a href="https://pietrosilver.github.io/random-quote-machine/" target="_blank"><img src="./src/images/maquina-de-citações.png" alt="Projeto Maquina de Citações" class="w-50 h-25 border-2 border-white rounded-2xl hover:scale-105 transition-transform duration-300" /></a>
+                        <figcaption class="bg-gray-600 text-white text-wrap w-50 mt-2 pl-2 mb-2 rounded-2xl">Projeto Máquina de Citações, feito com HTML, Bootstrap e JavaScript.</figcaption>
+                    </figure>
                 </div>
             </section>
-            <footer> <em>A simplicidade é o primeiro passo para fazer com perfeição</em> </footer>
-        </div>
-    </div>
+
+            <footer class="w-full bg-gray-600 pt-5 pb-5 border-t-2 border-white" id="contact">
+                <h2 class="text-white text-center text-2xl mb-5">Meios de Contato:</h2>
+                <div class="flex justify-center gap-4">
+                    <a class="hover:scale-110 transition-transform duration-300" href="https://wa.me/+5511942921687"> <svg class="w-5 h-5 bg-green-400 text-white rounded-full" fill="currentColor" viewBox="0 0 448 512" xmlns="http://www.w3.org">
+                    <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.1 0-65.6-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.2-16.4-14.6-27.4-32.7-30.6-38.2-3.2-5.6-.3-8.6 2.4-11.4 2.6-2.5 5.5-6.5 8.3-9.7 2.8-3.2 3.7-5.5 5.5-9.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.6 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a>
+                     <a class="hover:scale-110 transition-transform duration-300" href="https://github.com/pietrosilver" target="_blank"> <svg class="w--5 h-5" fill="currentColor" viewBox="0 0 496 512" xmlns="http://www.w3.org">
+                    <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.5 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+                    <a class="hover:scale-110 transition-transform duration-300" href="https://www.linkedin.com/in/miqueias-malavazi-lima-8067502b1/" target="_blank"><svg class="w-5 h-5 bg-white text-blue-600" fill="currentColor" viewBox="0 0 448 512" xmlns="http://www.w3.org">
+                    <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+                </div>
+            </footer>
+     </main>
+
+    <script src="src/script.js"></script>
 </body>
-<style>
-    *, ::before, ::after {
-    box-sizing:border-box;
-}
-html {
-    font-family:Tahoma;
-    background: #A7AED3;
-    overflow-x: hidden;
-}
-.container {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.info {
-    width:100dvw;
-    height:100dvh;
-    justify-content: center;
-    align-items: center;
-}
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    gap:30px;
-}
-#navbar {
-    font-weight: bold;
-}
-header {
-    background-color: #00216d;
-    width:100dvw;
-    height:10vh;
-    position: fixed;
-    top:0;
-z-index:1000;
-}
-
-a {
-    text-decoration: none;
-    color:white;
-    height:100%;
-}
-a:hover {
-    transform: scale(1.1);
-    transition:0.2s;
-}
-
-
-#welcome-section {
-    background-color:#838ABD;
-    padding-top:5em;
-    height: 20em;
-    text-align: center;
-}
-#projects {
-    padding-top:8em;
-    background-color: #A7AED3;
-    height:60em;
-    text-align:center;
-    display: grid;
-    grid-template-areas:
-    "title title"
-    "img-1 img-2"
-     "img-3 img-4";
-}
-#links {
-    background-color: #838ABD;
-    height:45dvh;
-    padding-top:2em;
-    text-align:center;
-    border-bottom: 2px solid white;
-}
-.projects-image {
-    width:80%;
-    height:80%;
-    border: 3px solid white;
-}
-figcaption {
-    margin:15px auto;
-    background-color: #838ABD;
-    width:17em;
-    color:white;
-    font-weight: 800;
-    border:2px solid white;
-
-}
-footer {
-    text-align: center;
-    height:5dvh;
-    background-color: #00216d;
-    color:white;
-}
-
-#social-icons {
-display: flex;
-justify-content:space-evenly;
-margin-top: 50px;
-}
-section {
-    max-width:100%;
-}
-h1, h2, p {
-    color:white;
-}
-p {
-    font-weight: 700;
-}
-#second-title {
-    text-decoration: underline;
-}
-.projects-image:hover {
-    transform: translateY(-10px);
-    box-shadow: 1px 1px 100px white;
-    transition:0.3s;
-}
-#profile-link {
-    color:#181717;
-    font-size:25px;
-}
-.fa-google {
-    color:blue;
-    font-size: 25px;
-}
-
-#profile-photo {
-    width:12em;
-    border-radius: 50%;
-    margin:20px;
-    border:2px solid white;
-    animation:border-effect 3s linear infinite; 
-    transition: 0.6s;
-}
-#profile-photo:hover {
-cursor:none;
-}
-@keyframes border-effect {
-0% {
-    border-color:white;
-}
-10% {
-    border-color:grey;
-}
-100% {
-    border-color: white;
-}
-}
-.fa-whatsapp {
-    color:green;
-    font-size:25px;
-}
-span {
-    font-size:25px;
-}
-#welcome-section, #links, footer, header {
-    width:100vw;
-}
-@media screen and (max-width:769px) {
- ul {
-    margin-right:25px;
- }
- header {
-    height:7vh;
-    left:0;
- }
- #projects  {
-display: flex;
-flex-direction: column;
-height:70em;
-    }
-    #welcome-section {
-        margin-top:2.9em;
-    }
-    #profile-photo {
-        width:6em;
-    }
-#links {
-    margin-top:1em;
-    height:35vh;
-}
-#links, #welcome-section, footer {
-    width:100vw;
-}
-}
-@media only screen and (orientation:landscape) and (max-width:1024px) {
-    header {
-        height:17dvh;
-        left:0;
-    }
-    #links {
-        height:70dvh;
-        margin-top:2em;
-    }
-    footer {
-        width:100vw;
-        height:2em;
-    }
-    ul {
-        margin-right:1em;
-    }
-}
-</style>
 </html>
